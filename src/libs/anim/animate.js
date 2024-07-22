@@ -25,3 +25,17 @@ export const PreloaderSildeUp = {
     transition: { duration: 0.8, ease: [0.76, 0, 0.24, 1], delay: 0.2 },
   },
 };
+
+export const BorderBottomV = {
+  init: {
+    width: "0%",
+  },
+  anim: (id) => ({
+    width: "95%",
+    transition: {
+      delay: 0.2 * id,
+      duration: 0.78,
+      ease: "easeInOut",
+    },
+  }),
+};
