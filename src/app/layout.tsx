@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Header from "@/components/section/Header";
+import Footer from "@/components/section/Footer";
 import { Inter } from "next/font/google";
 import Scrolling from "@/libs/react-lenis-scroll";
 import "./globals.css";
@@ -19,8 +20,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <Header />
-        <Scrolling>{children}</Scrolling>
+        <Scrolling>
+          <Header />
+          {children}
+          <Footer />
+        </Scrolling>
       </body>
     </html>
   );
