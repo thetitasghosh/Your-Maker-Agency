@@ -22,15 +22,17 @@ const Home = () => {
   }, [isloading]);
 
   return (
-    <div className="MainPage relative flex min-h-screen w-screen flex-col items-center justify-center">
+    <>
       <AnimatePresence mode="wait">
         {isloading && <Preloader />}
       </AnimatePresence>
-      <HeroSection />
-      <AboutSection />
-      <WorkSection />
-      <ContactSection />
-    </div>
+      <div className="MainPage relative flex min-h-screen w-screen flex-col items-center justify-center">
+        <HeroSection />
+        <AboutSection />
+        <WorkSection />
+        <ContactSection />
+      </div>
+    </>
   );
 };
 

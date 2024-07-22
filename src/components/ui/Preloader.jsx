@@ -8,7 +8,7 @@ const Preloader = () => {
       variants={PreloaderSildeUp}
       initial="init"
       exit={"exit"}
-      className="red fixed left-0 top-0 z-[9999] flex h-screen w-screen items-center justify-center bg-orange-600"
+      className="red fixed left-0 top-0 z-[9999] flex h-screen w-full items-center justify-center bg-orange-600"
     >
       <div className="flex h-full w-full items-center justify-center">
         <SVG />

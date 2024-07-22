@@ -31,3 +31,6 @@ body {
 }
 
 /* TODO : i have to theming this on orange  */
+::-webkit-scrollbar {
+  display: none;
+}
