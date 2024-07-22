@@ -9,7 +9,7 @@ const Header = () => {
         <div className="reddd">
           <Logo />
         </div>
-        <div className="redddd hidden h-10 w-[30rem] items-center justify-between tablet:flex">
+        <div className="redddd hidden h-10 w-[30rem] items-center justify-between laptop:flex">
           {navigation.map((data, idx) => {
             return (
               <h1
