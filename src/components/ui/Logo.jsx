@@ -14,7 +14,7 @@ const Logo = () => {
           alt=""
           priority
         />
-        <h1 className="text-4xl font-bold">
+        <h1 className="hidden text-4xl font-bold tablet:block">
           <span className="text-orange-600">YOUR</span> MAKER
         </h1>
       </Link>
