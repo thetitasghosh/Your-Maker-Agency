@@ -32,11 +32,11 @@ const HeroSection = () => {
         </h1>
       </div>
       <div className="redd flex h-full w-full items-center justify-end pr-10">
-        <div className="flex-center redd h-full w-fit flex-col gap-2 p-5 text-3xl">
-          <h1 className="split-text-line redd w-full overflow-hidden">
+        <div className="flex items-end redd laptop:text-3xl desktop:text-4xl h-full w-fit  tablet:text-2xl flex-col gap-2 p-5 text-xl">
+          <h1 className="split-text-line  redd desktop:w-[50rem] flex items-center justify-center w-full overflow-hidden">
             Bridging the gap between now and next with
           </h1>
-          <h1 className="split-text-line redd w-full overflow-hidden">
+          <h1 className="split-text-line  redd w-full overflow-hidden">
             strategic innovation in design and technology
           </h1>
         </div>

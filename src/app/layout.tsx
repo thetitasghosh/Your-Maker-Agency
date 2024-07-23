@@ -8,8 +8,11 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "YourMaker | A Digital Agency",
-  description: "Created by Titas | Creative Developer",
+  title: {
+    template: "%s | Your-Maker",
+    default: "Your-Maker | A Creative Digital Agency",
+  },
+  description: "A Creative Digital Agency",
 };
 
 export default function RootLayout({

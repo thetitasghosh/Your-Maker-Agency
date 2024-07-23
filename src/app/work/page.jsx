@@ -6,6 +6,10 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { BorderBottomV } from "@/libs/anim/animate";
 import { cn } from "@/libs/cn";
+// export const metadata = {
+//   title: "Works",
+//   description: "...",
+// };
 const WorkPage = () => {
   const [frame, setFrame] = useState(0);
   // const [hover, setHover] = useState(false);
