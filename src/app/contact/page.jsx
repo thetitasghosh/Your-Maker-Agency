@@ -1,6 +1,6 @@
 import React from "react";
 
-const page = () => {
+const ContactPage = () => {
   return (
     <div className="flex-sc">
       <h1 className="text-5xl">Contact Page</h1>
@@ -8,4 +8,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default ContactPage;
