@@ -33,9 +33,32 @@ export const BorderBottomV = {
   anim: (id) => ({
     width: "95%",
     transition: {
-      delay: 0.2 * id,
+      delay: 0.1 * id,
       duration: 0.78,
       ease: "easeInOut",
     },
   }),
+};
+
+export const ImagePlaceHolderSlideUp = {
+  init: {
+    height: "100%",
+  },
+  anim: {
+    height: "0%",
+    transition: {
+      duration: 0.5,
+      ease: "easeIn",
+    },
+  },
+  exit: {
+    height: "100%",
+    // bottom: 0,
+    top: 0,
+    left: 0,
+    transition: {
+      duration: 0.5,
+      ease: "easeIn",
+    },
+  },
 };
