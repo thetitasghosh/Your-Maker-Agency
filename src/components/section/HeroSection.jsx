@@ -25,7 +25,7 @@ const HeroSection = () => {
     <div className="redd flex min-h-screen w-screen flex-col items-center justify-center">
       <div className="redd flex h-full w-full items-end justify-center">
         <h1
-          className="split-text-yourmaker flex-center red w-full  h-fit overflow-hidden text-[3.5rem]  font-extrabold tablet:text-8xl laptop:text-9xl desktop:text-[10rem]"
+          className="split-text-yourmaker flex-center redd w-full  h-fit overflow-hidden text-[3.5rem]  font-extrabold tablet:text-8xl laptop:text-9xl desktop:text-[10rem]"
           // style={{ transform: "translateY(120px)" }}
         >
           YOURMAKER
