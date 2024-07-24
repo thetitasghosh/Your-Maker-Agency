@@ -65,7 +65,7 @@ function ListItem({ data, setFrame }) {
       onMouseEnter={() => HandleState(id, false)}
       onMouseLeave={() => HandleState(0, true)}
       className={cn(
-        "redd relative flex h-10 w-full cursor-pointer items-center justify-between px-10 transition-all duration-500 hover:px-16",
+        "redd relative flex h-10 w-full cursor-pointer items-center justify-between px-10 transition-all duration-500 text-stone-400 hover:text-white hover:px-16",
       )}
     >
       <Link href={""}>{info}</Link>
