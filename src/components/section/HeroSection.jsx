@@ -22,7 +22,7 @@ const HeroSection = () => {
     return () => ctx.revert();
   }, []);
   return (
-    <div className="redd flex h-screen w-screen flex-col items-center justify-center">
+    <div className="redd flex min-h-screen w-screen flex-col items-center justify-center">
       <div className="redd flex h-full w-full items-end justify-center">
         <h1
           className="split-text-yourmaker flex-center redd h-fit overflow-hidden text-6xl font-extrabold tablet:text-8xl laptop:text-9xl desktop:text-[10rem]"
