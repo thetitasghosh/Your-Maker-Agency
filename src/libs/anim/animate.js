@@ -7,6 +7,7 @@ export const SvgVariant = {
 };
 export const PathVarient = {
   hidden: {
+    strokeWidth: 18,
     pathLength: 0,
   },
   visible: {

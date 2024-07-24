@@ -4,7 +4,7 @@ import Card from "@/components/ui/Card";
 import { work } from "@/data/works";
 
 const HorizantalScroll = ({ Ref_Container }) => {
-
+  
   const { scrollYProgress } = useScroll({
     target: Ref_Container,
     offset: ["start start", "end end"],
