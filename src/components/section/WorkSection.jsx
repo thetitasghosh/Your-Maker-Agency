@@ -7,7 +7,7 @@ const WorkSection = () => {
   return (
     <div
       ref={container}
-      className="red relative flex h-[200vh] w-screen flex-col items-center justify-start"
+      className="redd relative flex h-[200vh] w-screen flex-col items-center justify-start"
     >
       <h1 className="p-2 text-5xl">
         PROJECTS <sup>( {work.length} )</sup>{" "}
