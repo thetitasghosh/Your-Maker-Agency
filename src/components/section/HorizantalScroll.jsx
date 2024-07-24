@@ -9,7 +9,7 @@ const HorizantalScroll = ({ Ref_Container }) => {
     layoutEffect: false,
     offset: ["start start", "end end"],
   });
-  const x = useTransform(scrollYProgress, [0, 1], ["20%", "-20%"]);
+  const x = useTransform(scrollYProgress, [0, 1], ["23.2%", "-23.2%"]);
   // const xmobile = useTransform(scrollYProgress, [0, 1], ["42%", "-42%"]);
 
   return (
