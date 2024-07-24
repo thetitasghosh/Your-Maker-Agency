@@ -11,7 +11,7 @@ const Logo = () => {
           src={"/assets/YM.svg"}
           width={40}
           height={20}
-          alt=""
+          alt="Your-Maker Log0"
           priority
         />
         <h1 className="hidden text-4xl font-bold tablet:block">

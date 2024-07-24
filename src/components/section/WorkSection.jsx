@@ -1,15 +1,17 @@
 "use client";
 import React, { useRef } from "react";
 import HorizantalScroll from "./HorizantalScroll";
-import {work} from '@/data/works'
+import { work } from "@/data/works";
 const WorkSection = () => {
-  const container = useRef(null);
+  const container = useRef();
   return (
     <div
       ref={container}
-      className="redd flex h-[200vh] w-screen flex-col items-center justify-start"
+      className="redd relative flex h-[200vh] w-screen flex-col items-center justify-start"
     >
-      <h1 className="p-2 text-5xl">PROJECTS <sup>( {work.length} )</sup> </h1>
+      <h1 className="p-2 text-5xl">
+        PROJECTS <sup>( {work.length} )</sup>{" "}
+      </h1>
       <HorizantalScroll Ref_Container={container} />
     </div>
   );

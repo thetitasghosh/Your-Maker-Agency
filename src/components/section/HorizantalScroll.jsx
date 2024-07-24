@@ -2,12 +2,9 @@ import { motion, useTransform, useScroll } from "framer-motion";
 import React, { useLayoutEffect } from "react";
 import Card from "@/components/ui/Card";
 import { work } from "@/data/works";
-// import gsap from "gsap";
-const HorizantalScroll = ({ Ref_Container }) => {
-  // const x = "0%";
-  // useLayoutEffect(() => {
 
-  // });
+const HorizantalScroll = ({ Ref_Container }) => {
+
   const { scrollYProgress } = useScroll({
     target: Ref_Container,
     offset: ["start start", "end end"],

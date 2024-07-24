@@ -1,5 +1,6 @@
 <svg version="1.1" id="svg_YM" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
-	y="0px" viewBox="0 0 480 480" style="enable-background:new 0 0 480 480;" xml:space="preserve">
+	y="0px" viewBox="0 0 480 480" width="auto" height="auto" style="enable-background:new 0 0 480 480;"
+	xml:space="preserve">
 	<style type="text/css">
 		.white {
 			fill: #FFFFFF;
@@ -8,6 +9,7 @@
 		.orange {
 			fill: #F26522;
 		}
+		
 	</style>
 	<g>
 		<g>
