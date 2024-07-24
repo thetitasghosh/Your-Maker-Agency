@@ -10,7 +10,7 @@ const Preloader = () => {
       exit={"exit"}
       className="red fixed left-0 top-0 z-[9999] flex h-screen w-full items-center justify-center bg-orange-600"
     >
-      <div className="flex h-full w-full items-center justify-center">
+      <div className="flex h-full w-36 items-center justify-center tablet:w-full">
         <SVG />
       </div>
     </motion.div>
