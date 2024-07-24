@@ -22,7 +22,7 @@ const Footer = () => {
       });
       tl.from(FooterTitle.chars, {
         y: "-100%",
-        stagger: { amount: 1, from: "end" },
+        stagger: { amount: 1, from: "end", },
       });
     });
     return () => gsapctx.revert();
