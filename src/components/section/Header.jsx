@@ -1,11 +1,12 @@
 import React from "react";
 import Logo from "../ui/Logo";
+import { FiMenu } from "react-icons/fi";
 import { navigation } from "@/data/navigation";
 import Link from "next/link";
 const Header = () => {
   return (
     <div className="redddd bg-background/70 fixed z-[99] h-14 w-full overflow-x-hidden shadow shadow-white backdrop-blur-md">
-      <div className="reddd flex h-full w-full items-center justify-around">
+      <div className="reddd laptop::justify-around flex h-full w-full items-center justify-between px-10">
         <div className="reddd">
           <Logo />
         </div>
@@ -21,9 +22,13 @@ const Header = () => {
             );
           })}
         </div>
+        <div className="laptop::hidden flex size-8 items-center justify-center">
+          <FiMenu className="w-full h-full"/>
+        </div>
       </div>
     </div>
   );
 };
 
 export default Header;
+//TODO:  add Nabar Component

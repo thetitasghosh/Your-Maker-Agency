@@ -14,7 +14,7 @@ const Logo = () => {
           alt="Your-Maker Log0"
           priority
         />
-        <h1 className="hidden text-4xl font-bold tablet:block">
+        <h1 className="hidden text-4xl font-bold laptop:block">
           <span className="text-orange-600">YOUR</span> MAKER
         </h1>
       </Link>
