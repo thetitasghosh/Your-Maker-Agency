@@ -1,9 +1,12 @@
-import React from "react";
+'use client'
+import React, { useState } from "react";
 import Logo from "../ui/Logo";
 import { FiMenu } from "react-icons/fi";
+import { GrClose } from "react-icons/gr";
 import { navigation } from "@/data/navigation";
 import Link from "next/link";
 const Header = () => {
+  const [isActive,setIsActive] = useState(false)
   return (
     <div className="redddd bg-background/70 fixed z-[99] h-14 w-full overflow-x-hidden shadow shadow-white backdrop-blur-md">
       <div className="reddd laptop::justify-around flex h-full w-full items-center justify-between px-10">
@@ -22,8 +25,10 @@ const Header = () => {
             );
           })}
         </div>
-        <div className="laptop::hidden flex size-8 items-center justify-center">
-          <FiMenu className="w-full h-full"/>
+        <div onClick={()=>setIsActive(!isActive)} className="size-8 items-center justify-center laptop:hidden">
+          {
+            isActive ? <GrClose className="w-full h-full"/>:<FiMenu className="w-full h-full"/>
+          }
         </div>
       </div>
     </div>
