@@ -13,12 +13,12 @@ const Header = () => {
         <div className="reddd">
           <Logo />
         </div>
-        <div className="redddd hidden h-10 w-[30rem] items-center justify-between laptop:flex">
+        <div className="redddd hidden h-10 w-[30rem] items-center justify-around laptop:flex">
           {navigation.map((data, idx) => {
             return (
               <h1
                 key={idx}
-                className="text-3xl transition duration-300 hover:text-orange-600"
+                className="text-2xl transition duration-300 hover:text-orange-600"
               >
                 <Link href={data.route}>{data.lable}</Link>
               </h1>

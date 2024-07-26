@@ -34,14 +34,14 @@ const HeroSection = () => {
       tl.from(
         YM_title.words[0],
         {
-          scale: 0.5,
+          scale: 1.5,
         },
         "2",
       );
       tl.from(
         YM_title.words[1],
         {
-          scale: 0.5,
+          scale: 1.5,
         },
         "2",
       );
