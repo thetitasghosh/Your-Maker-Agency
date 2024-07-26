@@ -1,5 +1,5 @@
 import { motion, useTransform, useScroll } from "framer-motion";
-import React, { useLayoutEffect } from "react";
+import React from "react";
 import Card from "@/components/ui/Card";
 import { work } from "@/data/works";
 
