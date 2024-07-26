@@ -6,17 +6,30 @@ import SplitType from "split-type";
 const HeroSection = () => {
   useLayoutEffect(() => {
     const YM_title = new SplitType(".split-text-yourmaker", {
-      types: "chars",
+      types: "words",
     });
     const YM_line = new SplitType(".split-text-line", { types: "lines" });
     const ctx = gsap.context(() => {
       let tl = gsap.timeline({
         delay: 2,
       });
-      tl.from(YM_title.chars, {
-        y: "200%",
-        stagger: { amount: 0.9 },
-      });
+      tl.from(
+        YM_title.words[0],
+        {
+          y: "200%",
+          duration: 0.5,
+        },
+        "1",
+      );
+      tl.from(
+        YM_title.words[1],
+        {
+          y: "-200%",
+          duration: 0.5,
+        },
+        "1",
+      );
+
       tl.from(YM_line.lines, { y: "200%", stagger: { amount: 0.1 } });
     });
     return () => ctx.revert();

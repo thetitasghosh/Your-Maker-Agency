@@ -63,3 +63,8 @@ export const ImagePlaceHolderSlideUp = {
     },
   },
 };
+
+export const CardInViewVar = {
+  init: {},
+  anim: {},
+};
