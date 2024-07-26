@@ -12,7 +12,7 @@ const Card = ({ data }) => {
   return (
     <div
       ref={ref}
-      className="redd relative flex h-full w-[30rem] items-end justify-center border-r-2 p-1 text-4xl"
+      className="redd relative flex h-full w-[30rem] items-end justify-center p-1 text-4xl"
     >
       <div
         style={{
@@ -22,18 +22,18 @@ const Card = ({ data }) => {
         }}
         onMouseOver={() => setIsMove(true)}
         onMouseLeave={() => setIsMove(false)}
-        className="redd relative flex h-72 w-72 cursor-pointer flex-col items-center justify-center gap-2 rounded-md"
+        className="redd relative flex h-96 w-96 cursor-pointer flex-col items-center justify-center gap-1 rounded-md"
       >
         <div className="flex w-full items-center justify-center">
           <Image
             src={img}
-            width={800}
+            width={1000}
             height={500}
             className="redd w-full"
             alt="Your Maker Demo Poster"
           />
         </div>
-        <h1 className="w-full text-base">{info}</h1>
+        {/* <h1 className="w-full text-base">{info}</h1> */}
         <Cursor isMove={isMove} />
       </div>
     </div>
