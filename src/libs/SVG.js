@@ -11,7 +11,8 @@ const SVG = () => {
         viewBox="0 0 1260 1553"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
-        variants={SvgVariant}
+        // variants={SvgVariant}
+        // className={"w-28"}
         // initial="hidden"
         // animate="visible"
       >

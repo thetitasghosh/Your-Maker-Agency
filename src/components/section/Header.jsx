@@ -35,5 +35,15 @@ const Header = () => {
   );
 };
 
+const NavBar = () => {
+  return (
+    <div>
+      
+    </div>
+  )
+}
+  
+
+
 export default Header;
 //TODO:  add Nabar Component
