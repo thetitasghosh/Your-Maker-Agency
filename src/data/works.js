@@ -8,15 +8,14 @@ export const work = [
   {
     id: 1,
     img: ADP,
-    inDif: "-320px",
     info: "Accessories Demo Poster",
   },
-  { id: 2, img: FDP, inDif: "-150px", info: "Food Demo Poster" },
-  { id: 3, img: GDP, inDif: "-250px", info: "Galaxy Demo Poster Design" },
-  { id: 4, img: S23SDP, inDif: "-320px", info: "S23 Series Demo Poster" },
-  { id: 5, img: W7DP, inDif: "-300px", info: "Watch 7 Demo Poster" },
-  { id: 6, img: FDP, inDif: "-140px", info: "Food Demo Poster" },
-  { id: 7, img: ADP, inDif: "-290px", info: "Accessories Demo Poster" },
+  { id: 2, img: FDP, info: "Food Demo Poster" },
+  { id: 3, img: GDP, info: "Galaxy Demo Poster Design" },
+  { id: 4, img: S23SDP, info: "S23 Series Demo Poster" },
+  { id: 5, img: W7DP, info: "Watch 7 Demo Poster" },
+  { id: 6, img: FDP, info: "Food Demo Poster" },
+  { id: 7, img: ADP, info: "Accessories Demo Poster" },
   //   { id: 8, text: "FIFTH" },inDif:"1",
 ];
 
