@@ -30,10 +30,10 @@ const Footer = () => {
   return (
     <footer
       ref={FooterRef}
-      className="red flex h-96 w-full flex-col items-center justify-end bg-yourMaker"
+      className="redd flex h-96 w-full flex-col items-center justify-end bg-yourMaker"
     >
       <div className="flex w-full items-center justify-center">
-        <h1 className="split-text-footer redd overflow-hidden text-5xl font-bold tablet:text-8xl desktop:text-[16rem]">
+        <h1 className="split-text-footer redd h-20 overflow-hidden text-[4rem] font-bold tablet:h-32 tablet:text-[7rem] laptop:h-44 laptop:text-[9.8rem] desktop:h-72 desktop:text-[16.6rem]">
           YOURMAKER
         </h1>
       </div>

@@ -29,7 +29,7 @@ const Home = () => {
       <div className="MainPage relative flex min-h-screen w-screen flex-col items-center justify-center">
         <HeroSection />
         <AboutSection />
-        <WorkSection />
+        <WorkSection title={"INDEX"} Intro={""} />
         <ContactSection />
       </div>
     </>
