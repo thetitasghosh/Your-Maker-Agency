@@ -65,6 +65,17 @@ export const ImagePlaceHolderSlideUp = {
 };
 
 export const CardInViewVar = {
-  init: {},
-  anim: {},
+  init: {
+    width: "5rem",
+    height: "5rem",
+  },
+  anim: {
+    width: "24rem",
+    height: "24rem",
+    transition: {
+      // delay: 0.1 * id,
+      duration: 0.75,
+      ease: "easeInOut",
+    },
+  },
 };

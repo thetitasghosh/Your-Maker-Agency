@@ -22,7 +22,7 @@ const Footer = () => {
       });
       tl.from(FooterTitle.chars, {
         y: "-100%",
-        stagger: { amount: 1, from: "end", },
+        stagger: { amount: 0.85, from: "edges" },
       });
     });
     return () => gsapctx.revert();
@@ -30,10 +30,10 @@ const Footer = () => {
   return (
     <footer
       ref={FooterRef}
-      className="redd flex h-96 w-full flex-col items-center justify-start bg-yourMaker py-10"
+      className="red flex h-96 w-full flex-col items-center justify-end bg-yourMaker"
     >
-      <div>
-        <h1 className="split-text-footer redd overflow-hidden text-5xl font-extrabold tablet:text-8xl desktop:text-9xl">
+      <div className="flex w-full items-center justify-center">
+        <h1 className="split-text-footer redd overflow-hidden text-5xl font-bold tablet:text-8xl desktop:text-[16rem]">
           YOURMAKER
         </h1>
       </div>
