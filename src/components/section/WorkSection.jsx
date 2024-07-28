@@ -2,7 +2,7 @@
 import React, { useRef } from "react";
 import HorizantalScroll from "./HorizantalScroll";
 import { work } from "@/data/works";
-const WorkSection = ({ title,Intro }) => {
+const WorkSection = ({ title, Intro }) => {
   const container = useRef();
   return (
     <div
@@ -11,7 +11,7 @@ const WorkSection = ({ title,Intro }) => {
     >
       {title === "INDEX" ? (
         <h1 className="p-2 text-5xl">
-          DEMOS <sup>( {work.length} )</sup>{" "}
+          FEATURED DEMOS <sup>( {work.length} )</sup>{" "}
         </h1>
       ) : null}
       <HorizantalScroll Ref_Container={container} />

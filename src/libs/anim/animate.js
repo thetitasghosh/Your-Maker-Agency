@@ -79,3 +79,24 @@ export const CardInViewVar = {
     },
   },
 };
+export const NavbarVarient = {
+  init: {
+    width: "0rem",
+    height: "0rem",
+    top: "20px",
+    right: "40px",
+    transition: {
+      duration: 0.75,
+      delay: 0.35,
+      type: "tween",
+      ease: [0.76, 0, 0.24, 1],
+    },
+  },
+  anim: {
+    width: "22rem",
+    height: "40rem",
+    top: "-20px",
+    right: "-40px",
+    transition: { duration: 0.75, type: "tween", ease: [0.76, 0, 0.24, 1] },
+  },
+};
