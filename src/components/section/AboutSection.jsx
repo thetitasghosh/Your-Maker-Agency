@@ -58,7 +58,7 @@ const AboutSection = () => {
   return (
     <div
       ref={ContainerRef}
-      className="redd flex h-96 w-full flex-col items-center justify-start gap-5 py-20"
+      className="redd  border-t-2 flex h-96 w-full flex-col items-center justify-start gap-5 py-20"
     >
       <div className="redd flex w-full items-center justify-center gap-3 text-2xl font-bold text-yourMaker tablet:text-5xl laptop:text-6xl desktop:text-7xl">
         <motion.h1 style={{ x: xleft }} className="line_1">
