@@ -7,9 +7,9 @@ export const metadata = {
 };
 const WorkPage = () => {
   return (
-    <div className="w-full flex min-h-screen flex-col ">
-      <h1 className="redd mt-20 text-3xl pl-5 tablet:text-5xl desktop:ml-20 desktop:text-5xl">
-        Selected Demos
+    <div className="flex min-h-screen w-full flex-col">
+      <h1 className="redd mt-20 pl-5 text-3xl tablet:text-5xl desktop:ml-20 desktop:text-5xl">
+        All Demos
       </h1>
       <WorkSection />
     </div>
