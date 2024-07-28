@@ -46,6 +46,13 @@ const HeroSection = () => {
         "2",
       );
       tl.from(YM_line.lines, { y: "200%", stagger: { amount: 0.1 } });
+      tl.from(".Btn", {
+        opacity: 0,
+        stagger: { amount: 0.5 },
+      });
+      tl.from(".Qs", {
+        y: "150%",
+      });
     });
     return () => ctx.revert();
   }, []);
@@ -59,14 +66,25 @@ const HeroSection = () => {
           YOUR MAKER
         </p>
       </div>
-      <div className="redd flex h-96 w-full items-center justify-end pr-10">
-        <div className="redd flex h-fit w-fit flex-col items-start gap-2 p-5 text-xl tablet:text-2xl laptop:text-3xl desktop:w-[35rem] desktop:text-4xl">
-          <h1 className="split-text-line redd flex w-fit items-center justify-start overflow-hidden">
+      <div className="redd flex h-96 w-full flex-col items-start justify-center">
+        <div className="redd flex h-fit w-full flex-col items-center justify-center gap-2 p-5 text-2xl tablet:text-2xl laptop:text-3xl desktop:text-5xl">
+          <h1 className="split-text-line redd flex w-fit items-center justify-center overflow-hidden pl-8 tablet:pl-20  tablet:px-10">
             Wanna Grow Your Bussiness
+            <span className="Qs redd block h-fit w-8 select-none overflow-hidden">
+              ?
+            </span>
           </h1>
           <h1 className="split-text-line redd flex w-fit items-end justify-center overflow-hidden">
             We Are Here For You
           </h1>
+        </div>
+        <div className="redd flex h-full w-full items-center justify-center gap-20 font-semibold">
+          <button className="Btn rounded-2xl bg-yourMaker p-2 px-5">
+            See Plans
+          </button>
+          <button className="Btn rounded-2xl border border-yourMaker p-2 px-5 text-yourMaker">
+            Contact
+          </button>
         </div>
       </div>
     </div>

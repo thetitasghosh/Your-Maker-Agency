@@ -7,7 +7,7 @@ const Logo = () => {
     <div className="redd flex h-full w-full items-center justify-center">
       <Link href={"/"} className="flex items-center justify-center">
         <Image
-          className="redd size-9 text-white"
+          className="redd size-9 select-none text-white"
           src={"/assets/YM.svg"}
           width={100}
           height={100}
