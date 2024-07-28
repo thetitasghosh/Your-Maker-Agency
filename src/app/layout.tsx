@@ -9,8 +9,8 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: {
-    template: "%s | Your-Maker",
-    default: "Your-Maker | A Creative Digital Agency",
+    template: "%s | Your Maker",
+    default: "Your Maker | A Creative Digital Agency",
   },
   description: "A Creative Digital Agency",
 };
