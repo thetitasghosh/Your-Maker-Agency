@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import HeroSection from "@/components/section/HeroSection";
 import AboutSection from "@/components/section/AboutSection";
 import WorkSection from "@/components/section/WorkSection";
+import ServiceSection from "@/components/section/ServiceSection";
 import ContactSection from "@/components/section/ContactSection";
 import Preloader from "@/components/ui/Preloader";
 import { AnimatePresence } from "framer-motion";
@@ -30,6 +31,7 @@ const Home = () => {
         <HeroSection />
         <AboutSection />
         <WorkSection title={"INDEX"} Intro={""} />
+        <ServiceSection />
         <ContactSection />
       </div>
     </>
