@@ -100,3 +100,19 @@ export const NavbarVarient = {
     transition: { duration: 0.75, type: "tween", ease: [0.76, 0, 0.24, 1] },
   },
 };
+export const StaggerOpacity = {
+  init: {
+    opacity: 0,
+    // y: "0%",
+  },
+  anim: (id) => ({
+    opacity: 1,
+    // y: "100%",
+    transition: {
+      duration: 0.75,
+      delay: 0.2 * id,
+      type: "tween",
+      ease: [0.76, 0, 0.24, 1],
+    },
+  }),
+};
