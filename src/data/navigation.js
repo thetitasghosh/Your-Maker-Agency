@@ -1,7 +1,8 @@
 export const navigation = [
   { id: 1, route: "/about", lable: "About Us " },
-  { id: 2, route: "/demo", lable: "Demos" },
-  { id: 3, route: "/contact", lable: "Contact" },
+  { id: 2, route: "/service", lable: "Service " },
+  { id: 3, route: "/demo", lable: "Demos" },
+  { id: 4, route: "/contact", lable: "Contact" },
 ];
 export const Social = [
   { id: 1, social: "Facebook" },
