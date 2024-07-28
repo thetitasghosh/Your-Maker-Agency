@@ -6,6 +6,8 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import React, { useLayoutEffect, useRef } from "react";
 import SplitType from "split-type";
 import Link from "next/link";
+import { StaggerOpacity } from "@/libs/anim/animate";
+import { motion } from "framer-motion";
 gsap.registerPlugin(ScrollTrigger);
 const Footer = () => {
   const FooterRef = useRef();
@@ -44,7 +46,7 @@ const Footer = () => {
       <div className="redd flex min-h-96 w-full flex-wrap items-center justify-between px-10">
         <div className="redd flex h-96 w-96 flex-col items-center justify-center gap-10">
           <h1 className="text-6xl">Contact with us?</h1>
-          <h1 className="border-b-2 text-3xl uppercase mx-10">
+          <h1 className="mx-10 border-b-2 text-3xl uppercase">
             <Link href={""}>yourmaker.in@gmail.com</Link>
           </h1>
         </div>
@@ -52,10 +54,18 @@ const Footer = () => {
           <h1 className="border-b-2 uppercase">navigation</h1>
           <div className="flex h-full w-full flex-col items-start justify-start gap-2 py-2 pl-5">
             {navigation.map((data) => {
+              let {id} = data
               return (
-                <Link key={data.id} href={data.route}>
-                  {data.lable}
-                </Link>
+                <motion.div
+                  variants={StaggerOpacity}
+                  initial="init"
+                  whileInView={"anim"}
+                  custom={id}
+                  key={id}
+                  className="overflow-hidden "
+                >
+                  <Link href={data.route}>{data.lable}</Link>
+                </motion.div>
               );
             })}
           </div>
@@ -64,10 +74,18 @@ const Footer = () => {
           <h1 className="border-b-2 uppercase">services</h1>
           <div className="flex h-full w-full flex-col items-start justify-start gap-2 py-2 pl-5">
             {Serviecs.map((data) => {
+              let { id } = data;
               return (
-                <Link key={data.id} href={""}>
-                  {data.service}
-                </Link>
+                <motion.div
+                  variants={StaggerOpacity}
+                  initial="init"
+                  whileInView={"anim"}
+                  custom={id}
+                  key={id}
+                  className="overflow-hidden"
+                >
+                  <Link href={""}>{data.service}</Link>
+                </motion.div>
               );
             })}
           </div>
@@ -76,10 +94,18 @@ const Footer = () => {
           <h1 className="border-b-2 uppercase">social media</h1>
           <div className="flex h-full w-full flex-col items-start justify-start gap-2 py-2 pl-5">
             {Social.map((data) => {
+              let {id} = data
               return (
-                <Link key={data.id} href={""}>
-                  {data.social}
-                </Link>
+                <motion.div
+                  variants={StaggerOpacity}
+                  initial="init"
+                  whileInView={"anim"}
+                  custom={id}
+                  key={id}
+                  className="overflow-hidden"
+                >
+                  <Link href={""}>{data.social}</Link>
+                </motion.div>
               );
             })}
           </div>
