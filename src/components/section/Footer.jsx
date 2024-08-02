@@ -46,15 +46,15 @@ const Footer = () => {
       <div className="redd flex min-h-96 w-full flex-wrap items-center justify-between px-10">
         <div className="redd flex h-96 w-96 flex-col items-center justify-center gap-10">
           <h1 className="text-6xl">Contact with us?</h1>
-          <h1 className="mx-10 border-b-2 text-3xl uppercase">
+          <h1 className="mx-10 border-b-2 text-2xl laptop:text-3xl  uppercase">
             <Link href={""}>yourmaker.in@gmail.com</Link>
           </h1>
         </div>
-        <div className="redd h-96 w-96 py-10">
+        <div className="redd h-96 w-96 py-10 tablet:w-72">
           <h1 className="border-b-2 uppercase">navigation</h1>
           <div className="flex h-full w-full flex-col items-start justify-start gap-2 py-2 pl-5">
             {navigation.map((data) => {
-              let {id} = data
+              let { id } = data;
               return (
                 <motion.div
                   variants={StaggerOpacity}
@@ -62,7 +62,7 @@ const Footer = () => {
                   whileInView={"anim"}
                   custom={id}
                   key={id}
-                  className="overflow-hidden "
+                  className="overflow-hidden"
                 >
                   <Link href={data.route}>{data.lable}</Link>
                 </motion.div>
@@ -70,7 +70,7 @@ const Footer = () => {
             })}
           </div>
         </div>
-        <div className="redd h-96 w-96 py-10">
+        <div className="redd h-96 w-96 py-10 tablet:w-72">
           <h1 className="border-b-2 uppercase">services</h1>
           <div className="flex h-full w-full flex-col items-start justify-start gap-2 py-2 pl-5">
             {Serviecs.map((data) => {
@@ -90,11 +90,11 @@ const Footer = () => {
             })}
           </div>
         </div>
-        <div className="redd h-96 w-96 py-10">
+        <div className="redd h-96 w-96 py-10 tablet:w-72">
           <h1 className="border-b-2 uppercase">social media</h1>
           <div className="flex h-full w-full flex-col items-start justify-start gap-2 py-2 pl-5">
             {Social.map((data) => {
-              let {id} = data
+              let { id } = data;
               return (
                 <motion.div
                   variants={StaggerOpacity}
