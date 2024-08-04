@@ -23,7 +23,7 @@ const AboutPage = () => {
         id="page2"
         className="redd flex h-screen w-full items-center justify-end"
       >
-        <div className="red w-[25rem] laptop:w-[50rem] tablet:w-[40rem] text-left pr-10">
+        <div className="red w-[25rem] laptop:w-[50rem] tablet:w-[40rem] desktop:w-[70rem] text-left pr-10">
           <TextReveal/>
         </div>
       </div>
