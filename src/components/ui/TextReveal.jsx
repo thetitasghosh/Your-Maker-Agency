@@ -29,7 +29,7 @@ const TextReveal = () => {
   });
   return (
     <div ref={cont} className="h-full w-full">
-      <p className="redd split-text-p text-6xl font-normal">
+      <p className="redd split-text-p desktop:text-6xl laptop:text-4xl tablet:text-3xl text-2xl font-normal">
         Hi This is &quot;Your Maker&quot; a Digital Marketing Agency in
         Badkulla, Nadia, West Bengal. We work with integrity. We believe in our
         {/* <br /> */}

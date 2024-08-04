@@ -15,7 +15,7 @@ const AboutPage = () => {
          text-xl laptop:text-5xl">
           We always think about our client&apos;s growth
         </h1>
-        <h1 className="font-extrabold uppercase text-3xl text-yourMaker tablet:text-5xl laptop:text-7xl">
+        <h1 className="font-extrabold uppercase text-2xl text-yourMaker tablet:text-5xl laptop:text-7xl">
           &apos;Thinking of Your Growth&apos;
         </h1>
       </div>
@@ -23,7 +23,7 @@ const AboutPage = () => {
         id="page2"
         className="redd flex h-screen w-full items-center justify-end"
       >
-        <div className="redd w-[75rem] text-left pr-10">
+        <div className="red w-[25rem] laptop:w-[50rem] tablet:w-[40rem] text-left pr-10">
           <TextReveal/>
         </div>
       </div>
@@ -31,7 +31,7 @@ const AboutPage = () => {
         id="page3"
         className="red flex h-screen w-full items-center justify-center"
       >
-        
+
       </div>
     </div>
   );
