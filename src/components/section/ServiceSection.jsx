@@ -11,13 +11,13 @@ const ServiceSection = () => {
           <div className="redd flex h-full w-96 items-center justify-center">
             text
           </div>
-          <div className="flex h-full w-full flex-col flex-wrap items-center justify-center gap-5 desktop:flex-row">
+          <div className="flex h-full w-full  flex-wrap items-center justify-center gap-5 desktop:flex-row">
             {["Product Photography", "Local SEO", "Social Media Marketing"].map(
               (data, idx) => {
                 return (
                   <div
                     key={idx}
-                    className="flex size-96 items-center justify-center rounded-2xl border border-yourMaker text-yourMaker"
+                    className="flex size-96 tablet:size-72 items-center justify-center rounded-2xl border border-yourMaker text-yourMaker"
                   >
                     {data}
                   </div>
@@ -30,12 +30,12 @@ const ServiceSection = () => {
           <div className="redd flex h-full w-96 items-center justify-center">
             text
           </div>
-          <div className="flex h-full w-full flex-col flex-wrap items-center justify-center gap-5 desktop:flex-row">
+          <div className="flex h-full w-full  flex-wrap items-center justify-center gap-5 desktop:flex-row">
             {["Website D&D", "Graphic Design", "SEO"].map((data, idx) => {
               return (
                 <div
                   key={idx}
-                  className="flex size-96 items-center justify-center rounded-2xl border border-yourMaker text-yourMaker"
+                  className="flex size-96 tablet:size-72 items-center justify-center rounded-2xl border border-yourMaker text-yourMaker"
                 >
                   {data}
                 </div>
