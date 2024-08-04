@@ -18,6 +18,7 @@ const Card = ({ data }) => {
         // onMouseOver={() => setIsMove(true)}
         // onMouseLeave={() => setIsMove(false)}
         variants={CardInViewVar}
+        
         initial="init"
         whileInView={"anim"}
         // custom={id}
