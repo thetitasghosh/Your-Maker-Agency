@@ -68,10 +68,12 @@ export const CardInViewVar = {
   init: {
     width: "5rem",
     height: "5rem",
+    filter: "blur(8px)",
   },
   anim: {
     width: "24rem",
     height: "24rem",
+    filter: "blur(0px)",
     transition: {
       // delay: 0.1 * id,
       duration: 0.75,
@@ -82,9 +84,8 @@ export const CardInViewVar = {
 export const NavbarVarient = {
   init: {
     width: "0rem",
-    height: "0rem",
-    top: "20px",
-    right: "40px",
+    height: "98vh",
+
     transition: {
       duration: 0.75,
       delay: 0.35,
@@ -94,11 +95,33 @@ export const NavbarVarient = {
   },
   anim: {
     width: "22rem",
-    height: "40rem",
-    top: "-20px",
-    right: "-40px",
+    height: "98vh",
+
     transition: { duration: 0.75, type: "tween", ease: [0.76, 0, 0.24, 1] },
   },
+};
+
+export const NavbarItem = {
+  init: {
+    translateX: 100,
+  },
+  anim: (i) => ({
+    translateX: 0,
+    transition: {
+      duration: 0.56,
+      delay: 0.1 * i,
+      ease: [0.215, 0.61, 0.355, 1],
+    },
+  }),
+  exit: (i) => ({
+    translateX: 100,
+    transition: {
+      duration: 0.5,
+      delay: 0.1 * i,
+      type: "linear",
+      ease: [0.76, 0, 0.24, 1],
+    },
+  }),
 };
 export const StaggerOpacity = {
   init: {

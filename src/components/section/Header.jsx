@@ -5,8 +5,8 @@ import { FiMenu } from "react-icons/fi";
 import { GrClose } from "react-icons/gr";
 import { navigation } from "@/data/navigation";
 import Link from "next/link";
-import { motion } from "framer-motion";
-import { NavbarVarient } from "@/libs/anim/animate";
+import { motion, AnimatePresence } from "framer-motion";
+import { NavbarVarient, NavbarItem } from "@/libs/anim/animate";
 const Header = () => {
   const [isActive, setIsActive] = useState(false);
   // const handleClose = () => {
@@ -49,10 +49,12 @@ const Header = () => {
       {/* {isActive && <NavBar active={isActive} />} */}
       <div
         onClick={() => setIsActive(!isActive)}
-        className="redd fixed right-5 top-3 z-[999] flex w-16 items-center justify-center rounded-3xl bg-yourMaker p-1 uppercase laptop:hidden"
+        className="redd fixed right-5 top-3 z-[999] mr-5 flex w-16 items-center justify-center rounded-3xl bg-yourMaker p-1 uppercase laptop:hidden"
       >
-        {isActive ? "close" : "menu"}
-        <NavBar active={isActive} />
+        <h1 className="z-[100] rounded-3xl">{isActive ? "close" : "menu"}</h1>
+        <AnimatePresence mode="wait">
+          <NavBar active={isActive} />
+        </AnimatePresence>
       </div>
     </>
   );
@@ -63,10 +65,46 @@ const NavBar = ({ active, setActive, data }) => {
     <motion.div
       variants={NavbarVarient}
       initial="init"
-      // animate={active ? "anim" : "init"}
-      className="relative z-[998] h-[24rem] w-[20rem] bg-yourMaker"
+      animate={active ? "anim" : "init"}
+      className="fixed right-0 top-0 z-[99] my-2 h-[24rem] w-[20rem] rounded-xl bg-yourMaker"
     >
-      {/* h */}
+      <div className="redd flex h-full w-full flex-col items-center justify-between">
+        <div className="w-full">
+          <h1 className="redd w-full pl-2 text-2xl font-semibold uppercase">
+            your maker
+          </h1>
+        </div>
+        {/* <h1 className="w-full uppercase">navigation</h1> */}
+        <div className="redd flex h-96 w-full flex-col">
+          <h1 className="uppercase">navigation</h1>
+          <div className="flex h-full w-full flex-col items-start justify-center gap-5">
+            <AnimatePresence mode="wait">
+              {navigation.map((data, i) => {
+                return (
+                  <div key={i} className="redd w-full">
+                    <motion.div
+                      variants={NavbarItem}
+                      initial="init"
+                      animate={active ? "anim" : "init"}
+                      exit="exit"
+                      custom={i}
+                      className="redd relative flex w-full"
+                    >
+                      <Link
+                        className="redd w-full pl-5 text-3xl"
+                        href={data.route}
+                      >
+                        {data.lable}
+                      </Link>
+                    </motion.div>
+                  </div>
+                );
+              })}
+            </AnimatePresence>
+          </div>
+        </div>
+        <div></div>
+      </div>
     </motion.div>
   );
 };

@@ -55,7 +55,7 @@ const HeroSection = () => {
   }, []);
   return (
     <div className="redd mt-10 flex min-h-screen w-screen flex-col items-center justify-evenly laptop:flex-row">
-      <div className="red flex h-full w-fit flex-col items-center justify-center gap-12 desktop:w-[50rem]">
+      <div className="redd flex h-full w-fit flex-col items-center justify-center gap-12 desktop:w-[50rem]">
         <div className="redd flex h-fit w-full flex-col items-center justify-center gap-2 uppercase laptop:items-start laptop:text-7xl desktop:text-8xl">
           <h1 className="split-text-yourmaker font-bold text-yourMaker">
             wanna grow
