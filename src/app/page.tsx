@@ -5,6 +5,7 @@ import AboutSection from "@/components/section/AboutSection";
 import WorkSection from "@/components/section/WorkSection";
 import ServiceSection from "@/components/section/ServiceSection";
 import ContactSection from "@/components/section/ContactSection";
+import PlanSection from "@/components/section/PlanSection";
 import Preloader from "@/components/ui/Preloader";
 import { AnimatePresence } from "framer-motion";
 // import Scene from "@/components/Scene/Scene";
@@ -32,6 +33,7 @@ const Home = () => {
         <AboutSection />
         <WorkSection title={"INDEX"} Intro={""} />
         <ServiceSection />
+        <PlanSection />
         <ContactSection />
       </div>
     </>
