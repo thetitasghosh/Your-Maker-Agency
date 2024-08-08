@@ -11,7 +11,7 @@ const PlanCard = ({ data, ref }) => {
   const { scrollYProgress } = useScroll({
     target: ref,
     offset: ["start start", "end end"],
-    layoutEffect:false
+    layoutEffect: false,
   });
   let yparalax = useTransform(scrollYProgress, [0, 1], [150, -80]);
   return (
@@ -22,10 +22,12 @@ const PlanCard = ({ data, ref }) => {
         { "h-[35rem] w-[25rem]": GoldPlan },
       )}
     >
-      <div className="planTitle h-20 w-full">
-        <h1>{data.plan}</h1>
-        <h1>{data.price}/Monthly</h1>
-        <p>{data.desc}</p>
+      <div className="planTitle h-20  w-full ">
+        <h1 className="w-fit rounded-xl border p-1 px-2">{data.plan}</h1>
+        <h1 className="text-xl">
+          <span className="font-bold">{data.price}</span> /Monthly
+        </h1>
+        <p className="border-b">{data.desc}</p>
       </div>
       <div className="planItem flex h-full w-full flex-col items-center justify-center gap-2">
         <ul>
@@ -37,11 +39,16 @@ const PlanCard = ({ data, ref }) => {
         </ul>
       </div>
       <div
-        className={cn("mb-5 h-16 w-[95%] rounded-xl bg-yourMaker text-white", {
-          "bg-white": GoldPlan,
-          "text-black": GoldPlan,
-        })}
-      ></div>
+        className={cn(
+          "mb-5 flex h-16 w-[95%] cursor-pointer items-center justify-center rounded-xl bg-yourMaker text-white",
+          {
+            "bg-white": GoldPlan,
+            "text-black": GoldPlan,
+          },
+        )}
+      >
+        <p className="text-xl font-medium">Check Out</p>
+      </div>
     </motion.div>
   );
 };
