@@ -1,13 +1,25 @@
+"use client";
 import { cn } from "@/libs/cn";
+import { useScroll, useTransform, motion } from "framer-motion";
 import React from "react";
 
-const PlanCard = ({ data }) => {
+const PlanCard = ({ data, ref }) => {
+  let { plan } = data;
+  let Gold = plan;
+  let GoldPlan = Gold === "Gold";
+
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ["start start", "end end"],
+    layoutEffect:false
+  });
+  let yparalax = useTransform(scrollYProgress, [0, 1], [150, -80]);
   return (
-    <div
-      style={{ backgroundColor: data.bgColor }}
+    <motion.div
+      style={{ backgroundColor: data.bgColor, y: GoldPlan ? "" : yparalax }}
       className={cn(
         "flex h-[30rem] w-96 flex-col items-center justify-center gap-5 rounded-2xl border border-orange-700 p-2 px-3",
-        { "h-[35rem] w-[25rem]": data.plan === "Gold" },
+        { "h-[35rem] w-[25rem]": GoldPlan },
       )}
     >
       <div className="planTitle h-20 w-full">
@@ -24,7 +36,13 @@ const PlanCard = ({ data }) => {
           <li>⨀ {data.benifits5}</li>
         </ul>
       </div>
-    </div>
+      <div
+        className={cn("mb-5 h-16 w-[95%] rounded-xl bg-yourMaker text-white", {
+          "bg-white": GoldPlan,
+          "text-black": GoldPlan,
+        })}
+      ></div>
+    </motion.div>
   );
 };
 
