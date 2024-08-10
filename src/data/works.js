@@ -21,17 +21,17 @@ export const work = [
   },
   {
     id: 3,
+    img: W9DP,
+    info: "Watch 9 Demo Poster",
+  },
+  { id: 7, img: FDP, info: "Food Demo Poster" },
+  {
+    id: 3,
     img: ADP,
     info: "Accessories Demo Poster",
   },
-  // { id: 6, img: W9DP, info: "Watch 9 Demo Poster" },
-  { id: 4, img: GDP, info: "Galaxy Demo Poster Design" },
+
+  // { id: 4, img: GDP, info: "Galaxy Demo Poster Design" },
   { id: 5, img: S23SDP, info: "S23 Series Demo Poster" },
   { id: 6, img: W7DP, info: "Watch 7 Demo Poster" },
-  { id: 7, img: FDP, info: "Food Demo Poster" },
-  // { id: 6, img: FDP, info: "Food Demo Poster" },
-  // { id: 7, img: ADP, info: "Accessories Demo Poster" },
-  //   { id: 8, text: "FIFTH" },inDif:"1",
 ];
-
-// export const InDefer = [{ i: 0.4 }, { i: 1 }, { i: 0.3 }, { i: 0.8 }];
