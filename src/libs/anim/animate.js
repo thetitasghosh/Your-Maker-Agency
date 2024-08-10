@@ -103,18 +103,18 @@ export const NavbarVarient = {
 
 export const NavbarItem = {
   init: {
-    translateX: 100,
+    translateX: 200,
   },
   anim: (i) => ({
     translateX: 0,
     transition: {
       duration: 0.56,
-      delay: 0.1 * i,
+      delay: 0.2 * i,
       ease: [0.215, 0.61, 0.355, 1],
     },
   }),
   exit: (i) => ({
-    translateX: 100,
+    translateX: 200,
     transition: {
       duration: 0.5,
       delay: 0.1 * i,
