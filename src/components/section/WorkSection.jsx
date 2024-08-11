@@ -28,19 +28,21 @@ const WorkSection = ({ title, Intro }) => {
       tl.from(
         tilte.chars,
         {
-          
-          y: "100%",
-          stagger: { amount: 0.8 },
+          duration: 1.4,
+          y: "200%",
+          stagger: { amount: 1.8 },
+          // transition: "1s linear",
         },
-        "1",
+        // "1",
       );
       tl.from(
-        '.num',
+        ".num",
         {
-          top: "100%",
+          delay: 1.8,
+          top: "200%",
           // stagger: { amount: 0.5 },
         },
-        "1",
+        // "1",
       );
     });
     return () => ctx.revert();
@@ -51,9 +53,9 @@ const WorkSection = ({ title, Intro }) => {
       className="redd relative flex h-[200vh] w-screen flex-col items-center justify-start"
     >
       {title === "INDEX" ? (
-        <div className=" flex gap-2 overflow-hidden p-2 laptop:text-5xl text-4xl">
-          <h1 className="title"> FEATURED DEMOS</h1>{" "}
-          <sup className="num mt-5">( {work.length} )</sup>{" "}
+        <div className="flex gap-2 overflow-hidden p-2 text-4xl transition-all duration-700 laptop:text-5xl desktop:text-8xl">
+          <h1 className="title overflow-hidden"> FEATURED DEMOS</h1>{" "}
+          <sup className="num mt-11">( {work.length} )</sup>{" "}
         </div>
       ) : null}
       <HorizantalScroll Ref_Container={container} />
