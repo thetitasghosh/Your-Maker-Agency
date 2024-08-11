@@ -1,6 +1,7 @@
 import React from "react";
 import WorkList from "@/components/ui/WorkList";
 import WorkSection from "@/components/section/WorkSection";
+import GridLayout from "@/components/section/GridLayout";
 export const metadata = {
   title: "Works",
   description: "...",
@@ -11,7 +12,7 @@ const WorkPage = () => {
       <h1 className="redd mt-20 pl-5 text-3xl tablet:text-5xl desktop:ml-20 desktop:text-5xl">
         All Demos
       </h1>
-      <WorkSection />
+      <GridLayout />
     </div>
   );
 };
