@@ -19,9 +19,9 @@ const GridLayout = () => {
 function WorkCard({ data }) {
   return (
     <div
-      style={{ backgroundColor: data.color }}
+      // style={{ backgroundColor: data.color }}
       className={cn(
-        `redd relative flex h-full w-[30rem] items-center justify-center bg-white p-10 text-4xl`,
+        `redd relative flex h-full w-[30rem] items-center justify-center  p-10 text-4xl`,
       )}
     >
       <div className="redd relative flex h-96 w-96 cursor-pointer flex-col items-center justify-center gap-1 rounded-md">
