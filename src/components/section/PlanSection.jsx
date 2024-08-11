@@ -6,7 +6,7 @@ const PlanSection = () => {
   return (
     <div
       id="plansection"
-      className="flex h-screen w-screen items-center justify-center gap-10"
+      className="flex min-h-screen flex-col laptop:flex-row px-5 w-screen items-center justify-center gap-10"
     >
       {plandetails.map((data, i) => {
         return <PlanCard ref={PlanCont} key={i} data={data} />;

@@ -23,8 +23,8 @@ const PlanCard = ({ data, ref }) => {
       )}
     >
       <div className="planTitle h-20 space-y-1 w-full ">
-        <h1 className="w-fit rounded-xl border p-1 px-2">{data.plan}</h1>
-        <h1 className="text-xl">
+        <h1 style={{color:GoldPlan?"white":""}} className="w-fit font-bold text-yourMaker rounded-xl  text-2xl p-1 px-2">{data.plan} Plan</h1>
+        <h1 className="text-2xl">
           <span className="font-bold">{data.price}</span> /Monthly
         </h1>
         <p className="border-b lie">{data.desc}</p>
@@ -47,7 +47,7 @@ const PlanCard = ({ data, ref }) => {
           },
         )}
       >
-        <p className="text-xl font-medium">Check Out</p>
+        <p className="text-xl font-medium">Discuss & Buy</p>
       </div>
     </motion.div>
   );
