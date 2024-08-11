@@ -2,9 +2,12 @@ import React, { useRef } from "react";
 import PlanCard from "@/components/ui/PlanCard";
 import { plandetails } from "@/data/plandetails";
 const PlanSection = () => {
-  const PlanCont = useRef()
+  const PlanCont = useRef();
   return (
-    <div className="flex h-screen w-screen items-center justify-center gap-10">
+    <div
+      id="plansection"
+      className="flex h-screen w-screen items-center justify-center gap-10"
+    >
       {plandetails.map((data, i) => {
         return <PlanCard ref={PlanCont} key={i} data={data} />;
       })}
