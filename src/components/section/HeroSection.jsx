@@ -4,6 +4,7 @@ import { FaArrowRight } from "react-icons/fa";
 import React, { useLayoutEffect, useState } from "react";
 import SplitType from "split-type";
 import { cn } from "@/libs/cn";
+import Link from "next/link";
 
 const HeroSection = () => {
   const [hover, setHover] = useState(false);
@@ -56,7 +57,7 @@ const HeroSection = () => {
   return (
     <div className="redd mt-10 flex min-h-screen w-screen flex-col items-center justify-evenly laptop:flex-row">
       <div className="redd flex h-full w-fit flex-col items-center justify-center gap-12 desktop:w-[50rem]">
-        <div className="redd flex h-fit w-full flex-col items-center justify-center gap-2 uppercase laptop:items-start laptop:text-7xl desktop:text-8xl">
+        <div className="redd flex h-fit w-full flex-col items-center justify-center gap-2 text-5xl uppercase laptop:items-start laptop:text-7xl desktop:text-8xl">
           <h1 className="split-text-yourmaker font-bold text-yourMaker">
             wanna grow
           </h1>
@@ -69,21 +70,26 @@ const HeroSection = () => {
         </div>
         <div className="reddd flex w-full items-center justify-start gap-5 laptop:items-center">
           <button className="Btn1 rounded-xl bg-yourMaker p-1 px-3 font-semibold text-white">
-            See Plans
+            <Link href={"#plansection"}>See Plans</Link>
           </button>
           <button
             onMouseEnter={() => setHover(!hover)}
             onMouseLeave={() => setHover(!hover)}
             className="Btn2 flex items-center justify-center gap-2 rounded-xl border border-yourMaker p-1 px-3 text-yourMaker"
           >
-            Contact
-            <FaArrowRight
-              className={cn("opacity-5 transition-all duration-500", {
-                // block: hover,
-                "opacity-100": hover,
-                "-rotate-45": hover,
-              })}
-            />
+            <Link
+              className="flex items-center justify-center gap-2"
+              href={"/contact"}
+            >
+              Contact
+              <FaArrowRight
+                className={cn("transition-all duration-500", {
+                  // block: hover,
+                  // "opacity-100": hover,
+                  "-rotate-45": hover,
+                })}
+              />
+            </Link>
           </button>
         </div>
       </div>
