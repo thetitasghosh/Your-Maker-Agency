@@ -94,7 +94,7 @@ export const NavbarVarient = {
     },
   },
   anim: {
-    width: "22rem",
+    width: "21.5rem",
     height: "98vh",
 
     transition: { duration: 0.75, type: "tween", ease: [0.76, 0, 0.24, 1] },
@@ -104,9 +104,12 @@ export const NavbarVarient = {
 export const NavbarItem = {
   init: {
     translateX: 200,
+    opacity:0
   },
   anim: (i) => ({
     translateX: 0,
+    opacity:1,
+    
     transition: {
       duration: 0.56,
       delay: 0.2 * i,
@@ -114,10 +117,11 @@ export const NavbarItem = {
     },
   }),
   exit: (i) => ({
+    opacity:0,
     translateX: 200,
     transition: {
       duration: 0.5,
-      delay: 0.1 * i,
+      delay: 0.2 * i,
       type: "linear",
       ease: [0.76, 0, 0.24, 1],
     },

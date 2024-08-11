@@ -49,9 +49,11 @@ const Header = () => {
       {/* {isActive && <NavBar active={isActive} />} */}
       <div
         onClick={() => setIsActive(!isActive)}
-        className="redd fixed right-5 top-3 z-[999] mr-5 flex w-16 items-center justify-center rounded-3xl bg-yourMaker p-1 uppercase laptop:hidden"
+        className="redd fixed right-5 top-3 z-[999] mt-1 mr-5 flex w-16 items-center justify-center rounded-3xl bg-yourMaker uppercase laptop:hidden"
       >
-        <h1 className="z-[100] rounded-3xl">{isActive ? "close" : "menu"}</h1>
+        <h1 className="z-[100] h-full  rounded-3xl border border-neutral-950 px-2">
+          {isActive ? "close" : "menu"}
+        </h1>
         <AnimatePresence mode="wait">
           <NavBar active={isActive} />
         </AnimatePresence>
@@ -66,41 +68,41 @@ const NavBar = ({ active, setActive, data }) => {
       variants={NavbarVarient}
       initial="init"
       animate={active ? "anim" : "init"}
-      className="fixed right-0 top-0 z-[99] my-2 h-[24rem] w-[20rem] rounded-xl bg-yourMaker"
+      className="fixed right-1 top-0 z-[99] my-2 h-[24rem] w-[20rem] rounded-xl bg-yourMaker"
     >
       <div className="redd flex h-full w-full flex-col items-center justify-between">
         <div className="w-full">
-          <h1 className="redd w-full pl-2 text-2xl font-semibold uppercase">
+          <motion.h1 variants={NavbarItem} className="redd w-full pt-1 pl-2 text-2xl font-bold uppercase">
             your maker
-          </h1>
+          </motion.h1>
         </div>
         {/* <h1 className="w-full uppercase">navigation</h1> */}
         <div className="redd flex h-96 w-full flex-col">
-          <h1 className="uppercase">navigation</h1>
+          <motion.h1 variants={NavbarItem} className="uppercase redd text-xl ml-2">navigation</motion.h1>
           <div className="flex h-full w-full flex-col items-start justify-center gap-5">
-            <AnimatePresence mode="wait">
-              {navigation.map((data, i) => {
-                return (
-                  <div key={i} className="redd w-full">
-                    <motion.div
-                      variants={NavbarItem}
-                      initial="init"
-                      animate={active ? "anim" : "init"}
-                      exit="exit"
-                      custom={i}
-                      className="redd relative flex w-full"
+            {/* <AnimatePresence mode="wait"> */}
+            {navigation.map((data, i) => {
+              return (
+                <div key={i} className="redd w-full">
+                  <motion.div
+                    variants={NavbarItem}
+                    initial="init"
+                    animate={active ? "anim" : "exit"}
+                    exit="exit"
+                    custom={i}
+                    className="redd relative flex w-full"
+                  >
+                    <Link
+                      className="redd w-full pl-5 text-3xl"
+                      href={data.route}
                     >
-                      <Link
-                        className="redd w-full pl-5 text-3xl"
-                        href={data.route}
-                      >
-                        {data.lable}
-                      </Link>
-                    </motion.div>
-                  </div>
-                );
-              })}
-            </AnimatePresence>
+                      {data.lable}
+                    </Link>
+                  </motion.div>
+                </div>
+              );
+            })}
+            {/* </AnimatePresence> */}
           </div>
         </div>
         <div></div>
