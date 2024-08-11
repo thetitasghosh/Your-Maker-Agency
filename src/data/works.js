@@ -13,25 +13,29 @@ export const work = [
     id: 1,
     img: F6GBD,
     info: "Flip 6 Glass Broken Demo Poster",
+    color: "#344996",
   },
   {
     id: 2,
     img: F6RD,
     info: "Fold 6 Ribbon Demo Poste",
+    color: "#df6883",
   },
   {
     id: 3,
     img: W9DP,
     info: "Watch 9 Demo Poster",
+    color: "#37812b",
   },
-  { id: 7, img: FDP, info: "Food Demo Poster" },
+  { id: 7, img: FDP, info: "Food Demo Poster", color: "75afa9" },
   {
     id: 3,
     img: ADP,
     info: "Accessories Demo Poster",
+    color: "#9f87d6",
   },
 
-  // { id: 4, img: GDP, info: "Galaxy Demo Poster Design" },
-  { id: 5, img: S23SDP, info: "S23 Series Demo Poster" },
-  { id: 6, img: W7DP, info: "Watch 7 Demo Poster" },
+  { id: 4, img: GDP, info: "Galaxy Demo Poster Design" },
+  { id: 5, img: S23SDP, info: "S23 Series Demo Poster", color: "#e2dae3" },
+  { id: 6, img: W7DP, info: "Watch 7 Demo Poster", color: "#9fcec7" },
 ];
