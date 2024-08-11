@@ -22,12 +22,12 @@ const PlanCard = ({ data, ref }) => {
         { "h-[35rem] w-[25rem]": GoldPlan },
       )}
     >
-      <div className="planTitle h-20  w-full ">
+      <div className="planTitle h-20 space-y-1 w-full ">
         <h1 className="w-fit rounded-xl border p-1 px-2">{data.plan}</h1>
         <h1 className="text-xl">
           <span className="font-bold">{data.price}</span> /Monthly
         </h1>
-        <p className="border-b">{data.desc}</p>
+        <p className="border-b lie">{data.desc}</p>
       </div>
       <div className="planItem flex h-full w-full flex-col items-center justify-center gap-2">
         <ul>
