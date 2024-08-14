@@ -8,9 +8,9 @@ const ServiceSection = () => {
           Our Service
         </h1>
         <div className="redd flex h-full w-full flex-col items-center justify-center desktop:flex-row">
-          <div className="redd flex h-full w-96 items-center justify-center">
+          {/* <div className="redd flex h-full w-96 items-center justify-center">
             text
-          </div>
+          </div> */}
           <div className="flex h-full w-full  flex-wrap items-center justify-center gap-5 desktop:flex-row">
             {["Product Photography", "Local SEO", "Social Media Marketing"].map(
               (data, idx) => {
@@ -27,9 +27,9 @@ const ServiceSection = () => {
           </div>
         </div>
         <div className="redd desktop:flex-row flex items-center justify-center h-full w-full flex-col">
-          <div className="redd flex h-full w-96 items-center justify-center">
+          {/* <div className="redd flex h-full w-96 items-center justify-center">
             text
-          </div>
+          </div> */}
           <div className="flex h-full w-full  flex-wrap items-center justify-center gap-5 desktop:flex-row">
             {["Website D&D", "Graphic Design", "SEO"].map((data, idx) => {
               return (
