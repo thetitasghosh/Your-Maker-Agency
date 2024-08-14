@@ -18,24 +18,38 @@ const PlanCard = ({ data, ref }) => {
     <motion.div
       style={{ backgroundColor: data.bgColor, y: GoldPlan ? "" : yparalax }}
       className={cn(
-        "flex h-[30rem] w-96 flex-col items-center justify-center gap-5 rounded-2xl border border-orange-700 p-2 px-3",
-        { "h-[35rem] w-[25rem]": GoldPlan },
+        "flex h-[35rem] w-auto flex-col items-center justify-center gap-5 rounded-2xl border  border-orange-700 p-2 px-3",
+        {
+          "h-[40rem] w-[28rem]": GoldPlan,
+          "": GoldPlan,
+        },
       )}
     >
-      <div className="planTitle h-20 space-y-1 w-full ">
-        <h1 style={{color:GoldPlan?"white":""}} className="w-fit font-bold text-yourMaker rounded-xl  text-2xl p-1 px-2">{data.plan} Plan</h1>
-        <h1 className="text-2xl">
-          <span className="font-bold">{data.price}</span> /Monthly
+      <div className="planTitle h-20 w-full space-y-1">
+        <h1
+          style={{ color: GoldPlan ? "white" : "" }}
+          className="w-fit rounded-xl border p-2 px-3 text-2xl font-bold text-yourMaker"
+        >
+          {data.plan} Plan
         </h1>
-        <p className="border-b lie">{data.desc}</p>
+        <h1 className="pl-3 text-2xl">
+          <span className="font-bold">₹ {data.price}</span> / Monthly
+        </h1>
+        <p className="border-b pl-3"></p>
       </div>
-      <div className="planItem flex h-full w-full flex-col items-center justify-center gap-2">
-        <ul>
+      <div className="planItem mb-1 mt-5 flex h-full w-full font-medium flex-col items-center justify-center gap-2">
+        <ul className="space-y-1">
           <li>⨀ {data.benifits1}</li>
           <li>⨀ {data.benifits2}</li>
           <li>⨀ {data.benifits3}</li>
           <li>⨀ {data.benifits4}</li>
           <li>⨀ {data.benifits5}</li>
+          <li>⨀ {data.benifits6}</li>
+          <li>⨀ {data.benifits7}</li>
+          <li>⨀ {data.benifits8}</li>
+          <li>⨀ {data.benifits9}</li>
+          <li>⨀ {data.benifits10}</li>
+          <li>⨀ {data.benifits11}</li>
         </ul>
       </div>
       <div
