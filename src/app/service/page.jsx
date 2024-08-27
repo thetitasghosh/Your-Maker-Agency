@@ -1,5 +1,8 @@
 import React from 'react';
-
+export const metadata = {
+  title: "Service",
+  description: "...",
+};
 const page = () => {
   return (
     <div className='w-screen h-screen flex items-center justify-center'>
