@@ -9,12 +9,12 @@ const AboutPage = () => {
     <div className="redd flex min-h-screen w-screen flex-col items-center justify-center">
       <div
         id="page1"
-        className="redd flex h-screen w-full flex-col items-center justify-center gap-10"
+        className="redd flex h-screen w-full flex-col items-center tablet:justify-center justify-end gap-10"
       >
         {/* <h1 className="text-xl capitalize tablet:text-4xl laptop:text-5xl">
           We always think about our client&apos;s growth
         </h1> */}
-        <h1 className="text-2xl font-extrabold uppercase text-yourMaker tablet:text-5xl laptop:text-7xl">
+        <h1 className="text-2xl redd pb-10 tablet:pb-0 font-extrabold uppercase text-yourMaker tablet:text-5xl laptop:text-6xl desktop:text-8xl">
           Thinking of Your Growth
         </h1>
       </div>
@@ -28,7 +28,7 @@ const AboutPage = () => {
       </div>
       <div
         id="page3"
-        className="red flex h-screen w-full items-center justify-center"
+        className="redd flex h-screen w-full items-center justify-center"
       ></div>
     </div>
   );

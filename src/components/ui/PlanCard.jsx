@@ -18,7 +18,7 @@ const PlanCard = ({ data, ref }) => {
     <motion.div
       style={{ backgroundColor: data.bgColor, y: GoldPlan ? "" : yparalax }}
       className={cn(
-        "flex h-[35rem] w-auto flex-col items-center justify-center gap-5 rounded-2xl border  border-orange-700 p-2 px-3",
+        "flex h-[35rem] w-auto flex-col items-center justify-center gap-5 rounded-2xl border border-orange-700 p-2 px-3",
         {
           "h-[40rem] w-[28rem]": GoldPlan,
           "": GoldPlan,
@@ -33,11 +33,11 @@ const PlanCard = ({ data, ref }) => {
           {data.plan} Plan
         </h1>
         <h1 className="pl-3 text-2xl">
-          <span className="font-bold">₹ {data.price}</span> / Monthly
+          <span className="font-bold">₹ {data.price}</span> / Month
         </h1>
         <p className="border-b pl-3"></p>
       </div>
-      <div className="planItem mb-1 mt-5 flex h-full w-full font-medium flex-col items-center justify-center gap-2">
+      <div className="planItem mb-1 mt-5 flex h-full w-full flex-col items-center justify-center gap-2 font-medium">
         <ul className="space-y-1">
           <li>⨀ {data.benifits1}</li>
           <li>⨀ {data.benifits2}</li>

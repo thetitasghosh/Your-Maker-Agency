@@ -1,9 +1,11 @@
+"use client";
 import { motion } from "framer-motion";
 import React, { useRef, useState } from "react";
 import Cursor from "@/components/ui/Cursor";
 import Image from "next/image";
 import { CardInViewVar } from "@/libs/anim/animate";
-const Card = ({ data }) => {
+import { cn } from "@/libs/cn";
+const Card = ({ data, className }) => {
   const Cardref = useRef(null);
   const { id } = data;
   // const IsInView = useInView(cardCont);
@@ -12,13 +14,15 @@ const Card = ({ data }) => {
   return (
     <div
       ref={Cardref}
-      className="redd relative flex h-full w-[30rem] items-center justify-center p-1 text-4xl"
+      className={cn(
+        "redd relative flex h-full w-[30rem] items-center justify-center p-1 text-4xl",
+        className,
+      )}
     >
       <motion.div
         // onMouseOver={() => setIsMove(true)}
         // onMouseLeave={() => setIsMove(false)}
         variants={CardInViewVar}
-        
         initial="init"
         whileInView={"anim"}
         // custom={id}

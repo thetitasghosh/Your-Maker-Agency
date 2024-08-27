@@ -1,7 +1,7 @@
 "use client";
 import React, { useLayoutEffect, useRef } from "react";
 import HorizantalScroll from "./HorizantalScroll";
-import { work } from "@/data/works";
+// import { work } from "@/data/works";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import SplitType from "split-type";
@@ -55,7 +55,7 @@ const WorkSection = ({ title, Intro }) => {
       {title === "INDEX" ? (
         <div className="flex gap-2 overflow-hidden p-2 text-4xl transition-all duration-700 laptop:text-5xl desktop:text-8xl">
           <h1 className="title overflow-hidden"> FEATURED DEMOS</h1>{" "}
-          <sup className="num mt-11">( {work.length} )</sup>{" "}
+          {/* <sup className="num mt-11">( {work.length} )</sup>{" "} */}
         </div>
       ) : null}
       <HorizantalScroll Ref_Container={container} />

@@ -22,6 +22,7 @@ body {
   background-color: black;
   color: white;
   /* overflow-x: hidden; */
+  /* scroll-behavior: smooth; */
 }
 .red {
   border: 1px solid red;
