@@ -1,7 +1,7 @@
 import React from "react";
-import SVG from "@/libs/SVG";
+import SVG from "@/lib/SVG";
 import { motion } from "framer-motion";
-import { PreloaderSildeUp } from "@/libs/anim/animate";
+import { PreloaderSildeUp } from "@/lib/anim/animate";
 const Preloader = () => {
   return (
     <motion.div
@@ -10,7 +10,7 @@ const Preloader = () => {
       exit={"exit"}
       className="redd fixed left-0 top-0 z-[9999] flex h-screen w-full items-center justify-center bg-black"
     >
-      <div className="redd flex  h-full w-48 items-center justify-center">
+      <div className="redd flex h-full w-48 items-center justify-center">
         {/* <h1 className="red">YOUR</h1> */}
         <SVG />
         {/* <h1 className="red">MAKER</h1> */}

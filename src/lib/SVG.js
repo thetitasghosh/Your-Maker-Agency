@@ -1,7 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 import React from "react";
-import { SvgVariant, PathVarient } from "@/libs/anim/animate";
+import { SvgVariant, PathVarient } from "@/lib/anim/animate";
 const SVG = () => {
   return (
     <div>

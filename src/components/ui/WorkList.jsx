@@ -3,10 +3,10 @@ import React, { useState } from "react";
 import { work } from "../../data/works";
 import Image from "next/image";
 import Link from "next/link";
-import { cn } from "@/libs/cn";
+import { cn } from "@/lib/utils";
 
 import { motion } from "framer-motion";
-import { BorderBottomV } from "../../libs/anim/animate";
+import { BorderBottomV } from "../../lib/anim/animate";
 
 const WorkList = () => {
   const [frame, setFrame] = useState(0);
@@ -65,7 +65,7 @@ function ListItem({ data, setFrame }) {
       onMouseEnter={() => HandleState(id, false)}
       onMouseLeave={() => HandleState(0, true)}
       className={cn(
-        "redd relative flex h-10 w-full cursor-pointer items-center justify-between px-10 transition-all duration-500 text-stone-400 hover:text-white hover:px-16",
+        "redd relative flex h-10 w-full cursor-pointer items-center justify-between px-10 text-stone-400 transition-all duration-500 hover:px-16 hover:text-white",
       )}
     >
       <Link href={""}>{info}</Link>

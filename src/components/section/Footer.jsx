@@ -6,7 +6,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import React, { useLayoutEffect, useRef } from "react";
 import SplitType from "split-type";
 import Link from "next/link";
-import { StaggerOpacity } from "@/libs/anim/animate";
+import { StaggerOpacity } from "@/lib/anim/animate";
 import { motion } from "framer-motion";
 gsap.registerPlugin(ScrollTrigger);
 const Footer = () => {
@@ -46,7 +46,7 @@ const Footer = () => {
       <div className="redd flex min-h-96 w-full flex-wrap items-center justify-between px-10">
         <div className="redd flex h-96 w-96 flex-col items-center justify-center gap-10">
           <h1 className="text-6xl">Contact with us?</h1>
-          <h1 className="mx-10 border-b-2 text-2xl laptop:text-3xl  uppercase">
+          <h1 className="mx-10 border-b-2 text-2xl uppercase laptop:text-3xl">
             <Link href={""}>yourmaker.in@gmail.com</Link>
           </h1>
         </div>

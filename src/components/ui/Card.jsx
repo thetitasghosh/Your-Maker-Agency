@@ -3,8 +3,8 @@ import { motion } from "framer-motion";
 import React, { useRef, useState } from "react";
 import Cursor from "@/components/ui/Cursor";
 import Image from "next/image";
-import { CardInViewVar } from "@/libs/anim/animate";
-import { cn } from "@/libs/cn";
+import { CardInViewVar } from "@/lib/anim/animate";
+import { cn } from "@/lib/utils";
 const Card = ({ data, className }) => {
   const Cardref = useRef(null);
   const { id } = data;
