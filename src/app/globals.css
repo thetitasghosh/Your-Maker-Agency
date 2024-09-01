@@ -37,7 +37,7 @@ body {
 }
 ::selection {
   background: #f26522;
-  color: white;
+  color: black;
 }
 @layer base {
   :root {
