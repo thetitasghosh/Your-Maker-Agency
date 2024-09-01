@@ -49,12 +49,12 @@ const ContactLayout = () => {
                 </SelectItem>
                 {/* <SelectItem value="pineapple">Pineapple</SelectItem> */}
                 {/* </SelectGroup> */}
-                
+
               </SelectContent>
             </Select>
           </div>
         </div>
-        <Textarea placeholder="Type your message here." />
+        <Textarea rows={12} placeholder="Type your message here." />
         <Button
           type="submit"
           size={"lg"}
